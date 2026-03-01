@@ -5,8 +5,8 @@ def procesar_linea(linea):
     resultado = 0
     linea = linea.strip()
     linea = linea.split(",")
-    for valor in range(len(linea)):
-        resultado = resultado + valor
+    for valor in linea:
+        resultado = resultado + int(valor)
     
     return resultado
         
